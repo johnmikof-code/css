@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing & CSS Learning</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #5B5F97;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .images-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .images-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .images-row div {
+      width: 250px;
+      background-color: #e8eaf6;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+    .images-row div:hover {
+      transform: translateY(-5px);
+      background-color: #dcdff0;
+    }
+
+    .images-row img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .images-row p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #5B5F97;
+    }
+
+    footer {
+      background-color: #5B5F97;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .images-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .images-row div {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Learning Hub</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Lessons</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Learn CSS and Typing the Fun Way</h2>
+    <p>Master the art of styling and typing with hands-on projects and real-world examples.</p>
+    <img src="iStock-887318138 effective classroom interactions.jpg" alt="People learning together in a classroom">
+  </section>
+
+  <section class="images-section">
+    <h2>Explore Our Key Features</h2>
+    <div class="images-row">
+      <div>
+        <img src="istockphoto-537331500-612x612.jpg" alt="Hands typing on a keyboard">
+        <p>Interactive Lessons</p>
+      </div>
+      <div>
+        <img src="iStock-976321838.jpg" alt="Instructor guiding a student on a laptop">
+        <p>Step-by-Step Guides</p>
+      </div>
+      <div>
+        <img src="premium_photo-1680807869086-e08309acfb24.jpg" alt="Students working on real-world coding projects">
+        <p>Build Real Projects</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 My Landing Page Project | All rights reserved.
+  </footer>
+
+</body>
+</html>
+
